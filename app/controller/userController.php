@@ -17,3 +17,6 @@
             include('../view/index.php');
         }
     }
+
+    $userController = new userController();
+    $userController->index();
