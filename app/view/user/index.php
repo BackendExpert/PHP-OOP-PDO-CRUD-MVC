@@ -5,11 +5,15 @@
 
 <style>
     .table{
-        margin: 50px 0;
+        margin: 30px 0;
+    }
+    .btn-success{
+        margin: 20px 0;
     }
 </style>
 
 <div class="container">
+    <a href=""><button class="btn btn-success">Add New User</button></a>
     <table class="table">
         <thead>
             <tr>
