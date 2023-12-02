@@ -1,6 +1,6 @@
 <?php 
     include("../../../headers/header.php");
-    require("../controller/userController.php");
+    require("../../controller/userController.php");
 ?>
 
 <style>
