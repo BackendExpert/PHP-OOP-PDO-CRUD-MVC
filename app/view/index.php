@@ -1,1 +1,3 @@
-HI all
+<?php 
+    include("../headers/header.php");
+?>
