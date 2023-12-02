@@ -8,7 +8,7 @@
 
         if($exc_user){
             $users_arrary = array();
-            while($row = $show_users->dba_fetch()){
+            while($row = $show_users->fetch(PDO::FETCH_ASSOC)){
                 $users_arrary[] = $row;
             }
             return $users_arrary;
