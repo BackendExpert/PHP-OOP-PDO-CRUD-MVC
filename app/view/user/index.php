@@ -29,7 +29,26 @@
         </thead>
         <tbody>
             <tr>
-                <td></td>
+                <?php 
+                    $list_user = users_show_all();
+                    if($list_user){
+                        foreach($list_user as $user){
+                ?>
+                    <td><?php $user['fname']?></td>
+                    <td><?php $user['lname']?></td>
+                    <td><?php $user['mobile_no']?></td>
+                    <td><?php $user['user_address']?></td>
+                    <td><?php $user['join_at']?></td>
+                    <td><?php $user['update_at']?></td>
+                    <td>
+                        <a href=""><button class="btn btn-warning">Edit</button></a>
+                        <a href=""><button class="btn btn-danger">Delete</button></a>
+                    </td>                    
+
+                <?php
+                        }
+                    }                
+                ?>
             </tr>
         </tbody>
     </table>
