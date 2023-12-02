@@ -7,13 +7,13 @@
     .table{
         margin: 30px 0;
     }
-    .btn-success{
+    .add-user{
         margin: 20px 0;
     }
 </style>
 
 <div class="container">
-    <a href=""><button class="btn btn-success">Add New User</button></a>
+    <a href=""><button class="btn btn-success add-user">Add New User</button></a>
     <table class="table">
         <thead>
             <tr>
