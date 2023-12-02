@@ -2,7 +2,17 @@
     include("../headers/header.php");
 ?>
 
+<style>
+    .add-user{
+        margin: 30px 0;
+    }
+    .table{
+        margin: 20px 0;
+    }
+</style>
+
 <div class="container">
+    <a href=""><button class="btn btn-success add-user">Add New User</button></a>
     <table class="table">
         <thead>
             <tr>
@@ -16,7 +26,13 @@
             </tr>
         </thead>
         <tbody>
-            
+            <?php 
+                while ($row = $users->fetch(PDO::FETCH_ASSOC)) : 
+            ?>
+
+            <?php 
+                endwhile;
+            ?>
         </tbody>
     </table>
 </div>
